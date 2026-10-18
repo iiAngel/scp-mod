@@ -4793,6 +4793,10 @@ Function FillRoom%(r.Rooms)
 			EntityType(r\Objects[17], HIT_MAP)
 			EntityAlpha(r\Objects[17], 0.0)
 			;[End Block]
+		Case r_room2_mod
+			;[Block]
+			r\RoomDoors.Doors[0] = CreateDoor(r, r\x + 528.0 * RoomScale, r\y, r\z, -90.0, True, ELEVATOR_DOOR)
+			;[End Block]
 	End Select
 	
 	Local ts.TempScreens, twp.TempWayPoints, tl.TempLights, tp.TempProps, tse.TempSoundEmitters

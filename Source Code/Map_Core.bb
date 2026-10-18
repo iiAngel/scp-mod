@@ -1626,6 +1626,8 @@ Enum RoomList
 	r_room4_ez, r_room4_2_ez, r_room4_3_ez
 	; ~ OTHERS
 	r_dimension_106, r_dimension_1499
+	; ~ MOD
+	r_room2_mod
 End Enum
 
 Function FindRoomID%(RoomName$)
@@ -2121,6 +2123,10 @@ Function FindRoomID%(RoomName$)
 		Case "dimension_1499"
 			;[Block]
 			Return(r_dimension_1499)
+			;[End Block]
+		Case "room2_mod"
+			;[Block]
+			Return(r_room2_mod)
 			;[End Block]
 		Default
 			;[Block]
